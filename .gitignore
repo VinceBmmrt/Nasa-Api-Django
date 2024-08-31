@@ -1,0 +1,42 @@
+# Ignorer l'environnement virtuel
+venv/
+env/
+.venv/
+
+# Ignorer le fichier .env (qui contient des clés sensibles)
+.env
+
+# Ignorer les fichiers de configuration de l'éditeur de texte
+.vscode/
+.idea/
+
+# Ignorer les fichiers compilés Python
+*.pyc
+__pycache__/
+
+# Ignorer la base de données SQLite (si tu l'utilises)
+db.sqlite3
+db.sqlite3-journal
+
+# Ignorer les fichiers de migration générés automatiquement par Django
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/__pycache__/
+
+# Ignorer les fichiers de logs
+*.log
+
+# Ignorer les fichiers de cache
+*.swp
+*.swo
+
+# Ignorer les fichiers et dossiers générés par Django staticfiles
+staticfiles/
+
+# Ignorer les fichiers d'exécution et de déploiement
+*.pid
+*.coverage
+*.pyo
+*.pyd
+*.pdb
+.DS_Store
