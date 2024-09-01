@@ -1,0 +1,59 @@
+/* Styles de base pour la page APOD */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #2b0b35; /* Fond gris clair pour toute la page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Assurer que le body prend au moins la hauteur de la fenêtre */
+}
+
+/* Styles du conteneur principal */
+.container {
+  width: 90%; /* Utiliser 90% de la largeur disponible */
+  max-width: 800px; /* Limiter la largeur maximale à 800px */
+  background: #fff; /* Fond blanc pour le conteneur */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+  padding: 20px;
+  text-align: center; /* Centrage du texte */
+}
+
+/* Styles de l'en-tête */
+header {
+  background: #333; /* Fond sombre pour l'en-tête */
+  color: #fff; /* Texte blanc pour l'en-tête */
+  padding: 10px 0;
+}
+
+/* Styles du titre */
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+/* Styles pour le conteneur de l'image */
+.image-container {
+  margin: 20px 0;
+}
+
+/* Styles pour les images */
+img {
+  max-width: 100%; /* Limiter la largeur maximale à 100% du conteneur */
+  max-height: 400px; /* Limiter la hauteur maximale à 400px */
+  height: auto; /* Conserver le ratio d'aspect */
+  border: 4px solid #333; /* Bordure sombre pour les images */
+  border-radius: 4px; /* Coins arrondis pour les images */
+}
+
+/* Styles pour les explications */
+.explanation {
+  margin: 20px 0;
+  padding: 15px;
+  background: #fff; /* Fond blanc pour les explications */
+  border-radius: 5px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+}
