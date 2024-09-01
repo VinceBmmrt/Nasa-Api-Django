@@ -1,59 +1,110 @@
-/* Styles de base pour la page APOD */
+/* Base styles for the entire site */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #2b0b35; /* Fond gris clair pour toute la page */
+  background-color: #2b0b35; /* Background color for the page */
   display: flex;
+  flex-direction: column; /* Make sure elements stack vertically */
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Assurer que le body prend au moins la hauteur de la fenêtre */
+  min-height: 100vh; /* Ensure body takes at least the height of the viewport */
 }
 
-/* Styles du conteneur principal */
-.container {
-  width: 90%; /* Utiliser 90% de la largeur disponible */
-  max-width: 800px; /* Limiter la largeur maximale à 800px */
-  background: #fff; /* Fond blanc pour le conteneur */
-  border-radius: 8px; /* Coins arrondis */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
-  padding: 20px;
-  text-align: center; /* Centrage du texte */
-}
-
-/* Styles de l'en-tête */
+/* Header styles */
 header {
-  background: #333; /* Fond sombre pour l'en-tête */
-  color: #fff; /* Texte blanc pour l'en-tête */
+  color: #fff; /* White text for the header */
   padding: 10px 0;
+  width: 100%;
+  text-align: center;
 }
 
-/* Styles du titre */
-h1 {
-  margin: 0;
-  font-size: 1.8em;
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-/* Styles pour le conteneur de l'image */
-.image-container {
-  margin: 20px 0;
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
-/* Styles pour les images */
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main container styles */
+.container {
+  width: 90%; /* Use 90% of the available width */
+  max-width: 800px; /* Limit the maximum width to 800px */
+  background: #fff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+
+  padding: 20px;
+  text-align: center; /* Center text inside the container */
+}
+
+/* Image styles */
 img {
-  max-width: 100%; /* Limiter la largeur maximale à 100% du conteneur */
-  max-height: 400px; /* Limiter la hauteur maximale à 400px */
-  height: auto; /* Conserver le ratio d'aspect */
-  border: 4px solid #333; /* Bordure sombre pour les images */
-  border-radius: 4px; /* Coins arrondis pour les images */
+  max-width: 100%; /* Limit maximum width to 100% of the container */
+  max-height: 200px; /* Limit maximum height to 200px */
+  height: auto; /* Maintain aspect ratio */
+  border: 4px solid #333; /* Dark border for images */
+  border-radius: 4px; /* Rounded corners for images */
 }
 
-/* Styles pour les explications */
+/* Explanation section styles */
 .explanation {
   margin: 20px 0;
   padding: 15px;
-  background: #fff; /* Fond blanc pour les explications */
+  background: #fff; /* White background for explanations */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Loader styles */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner styles */
+.spinner {
+  width: 50px;
+  height: 50px;
+}
+
+/* Styles pour la navigation */
+.nav {
+  display: flex;
+  justify-content: center; /* Centre les liens horizontalement */
+  gap: 20px; /* Espacement entre les liens */
+  margin-bottom: 20px; /* Espacement sous la barre de navigation */
+}
+
+/* Styles pour les liens de navigation */
+.nav a {
+  color: #3498db; /* Couleur bleue pour les liens */
+  text-decoration: none; /* Retire le soulignement par défaut */
+  font-size: 1.2em; /* Taille de police plus grande pour une meilleure visibilité */
+  padding: 10px 15px; /* Espacement intérieur pour les liens */
   border-radius: 5px; /* Coins arrondis */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+  transition: background-color 0.3s, color 0.3s; /* Transition douce pour les changements de couleur */
+}
+
+/* Styles pour les liens au survol */
+.nav a:hover {
+  background-color: #f4f4f4; /* Fond légèrement gris au survol */
+  color: #2b0b35; /* Couleur du texte au survol pour plus de contraste */
+  text-decoration: underline; /* Soulignement au survol */
 }
