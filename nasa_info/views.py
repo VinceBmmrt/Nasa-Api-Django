@@ -29,16 +29,16 @@ def planets_view(request):
     return HttpResponse(html_content)
 
 
-def planet_info_view(request, planet_name):
+# def planet_info_view(request, planet_name):
 
-    api_key = settings.NASA_API_KEY
-    url = f'https://api.nasa.gov/planetary/{planet_name}?api_key={api_key}'
+#     api_key = settings.NASA_API_KEY
+#     url = f'https://api.nasa.gov/planetary/{planet_name}?api_key={api_key}'
 
-    try:
-        response = requests.get(url)
-        response.raise_for_status()
-        data = response.json()
-    except requests.exceptions.RequestException as e:
-        return JsonResponse({'error': str(e)}, status=500)
+#     try:
+#         response = requests.get(url)
+#         response.raise_for_status()
+#         data = response.json()
+#     except requests.exceptions.RequestException as e:
+#         return JsonResponse({'error': str(e)}, status=500)
 
-    return JsonResponse(data)
+#     return JsonResponse(data)
