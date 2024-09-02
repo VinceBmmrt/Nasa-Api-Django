@@ -4,17 +4,17 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #2b0b35; /* Background color for the page */
+  background-color: #2b0b35;
   display: flex;
-  flex-direction: column; /* Make sure elements stack vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensure body takes at least the height of the viewport */
+  min-height: 100vh;
 }
 
 /* Header styles */
 header {
-  color: #fff; /* White text for the header */
+  color: #fff;
   padding: 10px 0;
   width: 100%;
   text-align: center;
@@ -40,11 +40,9 @@ header nav a:hover {
 .container {
   width: 90%; /* Use 90% of the available width */
   max-width: 800px; /* Limit the maximum width to 800px */
-  background: #fff; /* White background for the container */
-  border-radius: 8px; /* Rounded corners */
-
+  background: #fff;
   padding: 20px;
-  text-align: center; /* Center text inside the container */
+  text-align: center; /* Center text and inline elements */
 }
 
 /* Image styles */
@@ -54,8 +52,8 @@ img {
   height: auto; /* Maintain aspect ratio */
   border: 4px solid #333; /* Dark border for images */
   border-radius: 4px; /* Rounded corners for images */
+  margin: auto;
 }
-
 /* Explanation section styles */
 .explanation {
   margin: 20px 0;
@@ -71,7 +69,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -94,17 +91,47 @@ img {
 
 /* Styles pour les liens de navigation */
 .nav a {
-  color: #3498db; /* Couleur bleue pour les liens */
-  text-decoration: none; /* Retire le soulignement par défaut */
-  font-size: 1.2em; /* Taille de police plus grande pour une meilleure visibilité */
-  padding: 10px 15px; /* Espacement intérieur pour les liens */
-  border-radius: 5px; /* Coins arrondis */
-  transition: background-color 0.3s, color 0.3s; /* Transition douce pour les changements de couleur */
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Styles pour les liens au survol */
 .nav a:hover {
-  background-color: #f4f4f4; /* Fond légèrement gris au survol */
-  color: #2b0b35; /* Couleur du texte au survol pour plus de contraste */
-  text-decoration: underline; /* Soulignement au survol */
+  background-color: #f4f4f4;
+  color: #2b0b35;
+  text-decoration: underline;
+}
+
+/* Styles for the select dropdown */
+#planet-select {
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Styles for the planet information */
+#planet-name {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+#planet-description {
+  margin-top: 10px;
+}
+.parent-container {
+  display: none; /* Hidden by default */
+  text-align: center; /* Center the image */
+}
+
+#planet-image {
+  max-width: 100%;
+  max-height: 400px;
+  height: auto;
+  border: 4px solid #333;
+  border-radius: 4px;
+  margin: 20px auto;
 }
