@@ -24,8 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 NASA_API_KEY = config('NASA_API_KEY', default='default_value_if_missing')
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hxh5onuu835afp=l-_utjvrd+qt03%8p^=kte#n3_@v7ge*zvh'
 
+SECRET_KEY = config('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
