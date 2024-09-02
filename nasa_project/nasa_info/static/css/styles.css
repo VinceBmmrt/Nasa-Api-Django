@@ -7,7 +7,6 @@ body {
   background-color: #2b0b35;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
@@ -53,6 +52,7 @@ img {
   border: 4px solid #333;
   border-radius: 4px;
   margin: auto;
+  text-align: center;
 }
 /* Explanation section styles */
 .explanation {
@@ -60,6 +60,7 @@ img {
   padding: 15px;
   background: #fff;
   border-radius: 5px;
+  text-align: left;
 }
 
 /* Loader styles */
@@ -111,6 +112,7 @@ img {
   padding: 10px;
   font-size: 1em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 /* Styles for the planet information */
